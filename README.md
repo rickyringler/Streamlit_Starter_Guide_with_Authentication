@@ -1,14 +1,11 @@
-What is this project?
-Contains everything necessary to get you started with a Streamlit application.
-The example content of the application would be a report you want to share with users and allow them to filter the report before exporting.
+This project contains functionality for:
+1. Password authentication.
+2. Loading screen.
+3. CSV Report exports.
+4. CSV Report filtering.
 
-Why?
-Creating and deploying an application can take a long time, especially when you want to implement basic functionality like passwords.
-This allows you to deploy a Streamlit application and includes essentials like:
-1. Passwords
-2. Loading screen
-3. Filtering on reports
-
-How?
-Streamlit offers extensively customizable features.
-Other common libraries, like Pandas, can be used in conjuction with Streamlit effectively.
+Step-by-Step:
+1. Update secrets.toml with your password in parathenses.
+2. Replace all "ENTER x HERE" comments in reference to your app's properties.
+3. Replace tempoary_logo.png with your app logo.
+4. Replace my_data.csv with your app data.
