@@ -1,3 +1,10 @@
+The goal of this project is to deploy a scalable application with the Streamlit framework in Python.
+This code is a skeleton of an application I developed for my organization of ~90 employees, reaching, averagely, 400 hours pr/month of usage.
+
+![image](https://github.com/rickyringler/Streamlit_Starter_Guide_with_Authentication/assets/135162902/b66d4fe6-d2fc-4bc0-869a-3dbdf428e214)
+![image](https://github.com/rickyringler/Streamlit_Starter_Guide_with_Authentication/assets/135162902/7de7ea1d-3256-49db-b85f-ff514d10823c)
+
+
 This project contains functionality for:
 1. Password authentication.
 2. Loading screen.
