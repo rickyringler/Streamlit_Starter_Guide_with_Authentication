@@ -40,6 +40,5 @@ Follow these step-by-step instructions to set up and customize the Streamlit app
 
 ## Requirements
 
-To run this Streamlit application, you need basic procedural Python skills alongside fundamental knowledge of HTML and CSS.
-
-Feel free to explore, modify, and deploy this Streamlit Starter Guide for your own projects!
+Basic procedural Python skills.
+Basic, fundamental HTML & CSS.
