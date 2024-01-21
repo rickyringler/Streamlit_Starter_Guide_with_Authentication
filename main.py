@@ -1,16 +1,13 @@
+#Ricky Ringler : Streamlit Starter Guide with Authentication
+#Repo : https://github.com/rickyringler/Streamlit_Starter_Guide_with_Authentication
+#Documentation : https://github.com/rickyringler/Streamlit_Starter_Guide_with_Authentication/blob/master/README.md
+
 import pandas as pd
 import streamlit as st
 import time
-
-'''
-ENTER APPLICATION NAME HERE
-'''
-
-st.set_page_config(page_title="My App",layout="wide")
-
+st.set_page_config(page_title="ENTER APP NAME HERE",layout="wide")
 def check_password():
     def password_entered():
-
         progress_text = "Loading. Please wait :)"
         my_bar = st.progress(0, text=progress_text)
         for percent_complete in range(100):
@@ -18,7 +15,6 @@ def check_password():
             my_bar.progress(percent_complete + 1, text=progress_text)
         time.sleep(5)
         my_bar.empty()
-
         if st.session_state["password"] == st.secrets["password"]:
             st.session_state["password_correct"] = True
             del st.session_state["password"]
@@ -44,11 +40,6 @@ if check_password():
     with col1:
         st.write("")
     with col2:
-
-        '''
-        ENTER APPLICATION LOGO HERE
-        '''
-
         st.image("temporary_logo.png")
     with col3:
         st.write("")
@@ -80,25 +71,10 @@ if check_password():
                         </body>
                     </html>
                 """, unsafe_allow_html=True)
-
-    '''
-    ENTER APPLICATION NAME HERE
-    '''
     st.markdown("<h1 style='text-align: center; color: darkslategray;'>ENTER APPLICATION NAME HERE</h1>", unsafe_allow_html=True)
-
-    '''
-    ENTER REPORT NAME HERE
-    '''
-
     st.markdown("<h2 style='text-align: center; color: darkslategray;'>ENTER REPORT NAME HERE</h2>", unsafe_allow_html=True)
-
-    '''
-    ENTER REPORT FILE HERE
-    '''
-
     report = pd.read_csv("my_data.csv",index_col=0)
-
-    report_options = report["FIELD_NAME"].drop_duplicates()
+    report_options = report["ENTER FIELDNAME HERE"].drop_duplicates()
     report_all_data = report.to_csv(index=False).encode('utf-8')
     st.download_button(
         "Export All Report Data",
@@ -108,12 +84,10 @@ if check_password():
         key="download-tools-report_all_data",
     )
     report_choices = st.selectbox("Select a Value to Filter", report_options)
-
     if report == "":
         report_export = report_all_data
     else:
-        report_export = report.loc[(report["FIELD_NAME"] == report_choices)]
-
+        report_export = report.loc[(report["ENTER FIELDNAME HERE"] == report_choices)]
     st.dataframe(report_export)
     report_export = report_export.to_csv(index=False).encode("utf-8")
     st.download_button(
@@ -123,3 +97,27 @@ if check_password():
         "text/csv",
         key="download-tools-reportdata",
     )
+
+'''
+MIT License
+
+Copyright (c) 2024 Ricky Ringler
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+'''
