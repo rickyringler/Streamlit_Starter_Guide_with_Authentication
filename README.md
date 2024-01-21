@@ -1,20 +1,45 @@
-The goal of this project is to deploy a scalable application with the Streamlit framework in Python.
+# Streamlit Starter Guide with Authentication
 
-This code is a skeleton of an application I developed for my organization of 100 employees, **reaching, averagely, 500 hours pr/month of usage.**
+![Streamlit Logo](https://github.com/rickyringler/Streamlit_Starter_Guide_with_Authentication/assets/135162902/b66d4fe6-d2fc-4bc0-869a-3dbdf428e214)
 
-![image](https://github.com/rickyringler/Streamlit_Starter_Guide_with_Authentication/assets/135162902/b66d4fe6-d2fc-4bc0-869a-3dbdf428e214)
-![image](https://github.com/rickyringler/Streamlit_Starter_Guide_with_Authentication/assets/135162902/7de7ea1d-3256-49db-b85f-ff514d10823c)
+This repository provides a comprehensive guide to develop and deploy a Streamlit application with powerful features, including downloadable content, login authentication, and a stylish loading screen. The application was initially created for an organization of 100 employees, demonstrating its scalability with over 500 hours of monthly usage.
 
+## Key Features
 
-**This project contains functionality for:**
-1. Password authentication.
-2. Loading screen.
-3. Loading CSV reports into the app.
-4. Filter CSV reports in the app.
-5. Exporting filtered CSV reports in the app.
+1. **Password Authentication:** Secure your application with password authentication for authorized access.
 
-**Step-by-Step:**
-1. Update secrets.toml with your password in parathenses.
-2. Replace all "ENTER x HERE" comments in reference to your app's properties.
-3. Replace tempoary_logo.png with your app logo.
-4. Replace my_data.csv with your app data.
+2. **Loading Screen:** Enhance user experience with a visually appealing loading screen.
+
+3. **CSV Operations:**
+    - Read and display CSV files within the application.
+    - Enable users to download the displayed data in CSV format.
+
+4. **GUI for Data Transformation:**
+    - Create an intuitive graphical user interface (GUI) for filtering and transforming CSV files.
+
+## Project Screenshots
+
+![Screenshot 1](https://github.com/rickyringler/Streamlit_Starter_Guide_with_Authentication/assets/135162902/b66d4fe6-d2fc-4bc0-869a-3dbdf428e214)
+![Screenshot 2](https://github.com/rickyringler/Streamlit_Starter_Guide_with_Authentication/assets/135162902/7de7ea1d-3256-49db-b85f-ff514d10823c)
+
+## Getting Started
+
+Follow these step-by-step instructions to set up and customize the Streamlit application:
+
+1. **SECRETS.TOML:**
+   - Replace with your password for secure authentication.
+
+2. **TEMPORARY_LOGO.PNG:**
+   - Replace with your organization's logo.
+
+3. **MY_DATA.CSV:**
+   - Replace with your own dataset.
+
+4. **MAIN.PY:**
+   - Use Ctrl+F to find "ENTER X HERE" and replace variables as needed.
+
+## Requirements
+
+To run this Streamlit application, you need basic procedural Python skills alongside fundamental knowledge of HTML and CSS.
+
+Feel free to explore, modify, and deploy this Streamlit Starter Guide for your own projects!
