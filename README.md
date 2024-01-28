@@ -30,7 +30,7 @@ Follow these step-by-step instructions to set up and customize the Streamlit app
    - Replace with your password for secure authentication.
 
 2. **TEMPORARY_LOGO.PNG:**
-   - Replace with your organization's logo.
+   - Replace with your app's logo.
 
 3. **MY_DATA.CSV:**
    - Replace with your own dataset.
